@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom KPI Table</title>
+  <link rel="stylesheet" href="./KpiTable.css">
+  <script src="./lib/tableau.extensions.1.latest.js"></script>
+  <script defer src="./KpiTable.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="report-heading">
+      <div>
+        <div class="eyebrow">PERFORMANCE REPORT</div>
+        <h1>Daily KPI Report</h1>
+        <p>Custom-rendered worksheet table</p>
+      </div>
+      <div class="status" id="status">Starting…</div>
+    </header>
+    <section class="table-card">
+      <div class="table-wrap" id="table-wrap">
+        <div class="empty">
+          <strong>Waiting for Tableau data</strong>
+          <span>In Tableau, drag dimensions and measures onto the Data tile.</span>
+        </div>
+      </div>
+    </section>
+    <footer>Prototype · Summary data from the current Tableau worksheet</footer>
+  </main>
+</body>
+</html>
